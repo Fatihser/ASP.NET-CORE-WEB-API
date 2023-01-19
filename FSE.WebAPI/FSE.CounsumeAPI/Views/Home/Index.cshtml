@@ -1,0 +1,39 @@
+﻿@model List<FSE.CounsumeAPI.ResponseModel.ProductResponseModel>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web Api Consume</title>
+</head>
+<body>
+    <p>MVC Works.</p>
+
+    <p>@ViewBag.ResponseMessega</p>
+
+    <a asp-action="Create" asp-controller="Home">Yeni Urun Ekle</a>
+    <table>
+        <tr>
+            <th>Urunun Adi</th>
+            <th>Urunun Fiyati</th>
+            <th>Urunun Stogu</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        @foreach (var product in Model)
+	    {
+    <tr>
+        <td>@product.Name</td>
+        <td>@product.Price</td>
+        <td>@product.Stock</td>
+        <td>
+            <a asp-action="Update" asp-controller="Home" asp-route-id="@product.Id">Guncelle</a>
+        </td>
+        <td>
+            <a asp-action="Remove" asp-controller="Home" asp-route-id="@product.Id">Sil</a>
+        </td>
+    </tr>
+	    }
+    </table>
+
+    <a asp-action="Upload" asp-controller="Home">Upload</a>
+</body>
+</html>
