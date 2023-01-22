@@ -17,21 +17,26 @@
             <th></th>
             <th></th>
         </tr>
+        @{
+            if (Model != null)
+            {
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Price</td>
+                        <td>@product.Stock</td>
+                        <td>
+                            <a asp-action="Update" asp-controller="Home" asp-route-id="@product.Id">Guncelle</a>
+                        </td>
+                        <td>
+                            <a asp-action="Remove" asp-controller="Home" asp-route-id="@product.Id">Sil</a>
+                        </td>
+                    </tr>
+                }
+            }
+        }
 
-        @foreach (var product in Model)
-	    {
-    <tr>
-        <td>@product.Name</td>
-        <td>@product.Price</td>
-        <td>@product.Stock</td>
-        <td>
-            <a asp-action="Update" asp-controller="Home" asp-route-id="@product.Id">Guncelle</a>
-        </td>
-        <td>
-            <a asp-action="Remove" asp-controller="Home" asp-route-id="@product.Id">Sil</a>
-        </td>
-    </tr>
-	    }
     </table>
 
     <a asp-action="Upload" asp-controller="Home">Upload</a>

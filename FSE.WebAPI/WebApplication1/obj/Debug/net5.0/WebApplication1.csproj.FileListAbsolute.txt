@@ -62,3 +62,4 @@ D:\Projeler\Kurslar\Udemy aspnet\FSE.WebAPI\WebApplication1\bin\Debug\net5.0\run
 D:\Projeler\Kurslar\Udemy aspnet\FSE.WebAPI\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Projeler\Kurslar\Udemy aspnet\FSE.WebAPI\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Projeler\Kurslar\Udemy aspnet\FSE.WebAPI\WebApplication1\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Projeler\Kurslar\Udemy aspnet\FSE.WebAPI\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
