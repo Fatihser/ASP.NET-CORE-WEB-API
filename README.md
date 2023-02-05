@@ -1,5 +1,5 @@
 # ASP.NET CORE WEB API
- Simple Web API
+ Simple Web API With .NET 5.0 Version
  
  Update 0.1
  ->JWT Authorization and Authentication added.
